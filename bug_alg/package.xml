@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>bug_alg</name>
+  <version>1.3.2</version>
+  <description>
+    Bug Algorithm for Turtlebot3 Gazebo Simulations
+  </description>
+  <license>Apache 2.0</license>
+  <maintainer email="ilyaspektor@mail.ru">Ilya Spektor</maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf</depend>
+  <depend>gazebo_ros</depend>
+  
+  <export>
+    <gazebo_ros gazebo_media_path="${prefix}"/>
+    <gazebo_ros gazebo_model_path="${prefix}/models"/>
+  </export>
+</package>
